@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.HashMap;
 
-public class PerfactNo {
+public class Isomorphic {
     public static void main(String[] args) {
         String s="abba";
         String tr="cat dog dog cat ";
@@ -14,7 +14,7 @@ public class PerfactNo {
         public static boolean isIsomorphic(String s, String[] t) {
             HashMap<Character, Integer> charIndexS = new HashMap<>();
             HashMap<String, Integer> charIndexT = new HashMap<>();
-            
+
          if(s.length()!=t.length) return false;
             for (int i = 0; i < s.length(); i++) {
                 if (!charIndexS.containsKey(s.charAt(i))) {
